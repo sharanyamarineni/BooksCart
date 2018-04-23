@@ -1,0 +1,52 @@
+{% extends "_base.html" %}
+{% block content%}
+    {%if cart_dict is not none  and cart_dict|length > 0 %}
+    <div class="d-flex flex-row justify-content-center p-4">
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Book ID</th>
+                <th scope="col">Quantity</th>
+
+            </tr>
+        </thead>
+        <tbody>
+    {% for book in cart_dict%}
+                <tr>
+                    <th scope="row">{{book}}</th>
+                    <td>{{cart_dict[book]}}</td>
+                </tr>    
+    {%endfor%}
+        </tbody>
+        </table>
+    </div>
+
+    <div class="d-flex flex-column   p-8">
+    <form action="/placeorder" method="POST">
+        <div class="form-row justify-content-center">
+           <div class="col-sm-3 my-1">
+                <label class="sr-only" for="u_name">Name</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">&#128104;</div>
+                    </div>
+                    <input type="text" class="form-control" id="u_name" name="u_name" placeholder="sharanya">
+                </div>
+            </div>
+            <div class="col-sm-3 my-1">
+                <label class="sr-only" for="u_phone">Phone Number</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">&#128222;</div>
+                    </div>
+                    <input type="text" class="form-control" id="u_phone" name="u_phone" placeholder="Phone">
+                </div>
+            </div>
+            <div class="col-auto my-1">
+                <button type="submit" class="btn btn-primary">Place Order</button>
+            </div>
+        </div>
+    </form>
+    </div>
+    {%endif%}
+{% endblock%}

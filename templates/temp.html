@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Books Web Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+        <header class="CGBNf7">
+          <div class="_1tz-RS">
+            <div class="Y5-ZPI">
+              <div class="AsXM8z">
+                <div class="row">
+                  <a class="_2OJxl5" href="/">
+                    <img width="110" src="http://via.placeholder.com/110X40" alt="Flipkart" title="Flipkart">
+                  </a>
+                  <div class="_1NLCcM">
+                      <div class="row">
+                        <div class="col-11-12">
+                          <div class="O8ZS_U">
+                            
+                          </div>
+                        </div>
+                        <div class="col-1-12">
+                        </div>
+                        <input type="hidden" name="otracker" value="start">
+                        <input type="hidden" name="as-show" value="off">
+                        <input type="hidden" name="as" value="off">
+                      </div>
+                      <ul class="col-11-12 _1PBbw8"></ul>
+                  </div>
+                  <div class="_1Wr4v5">
+                    <div class="_2f5Jjv">
+                      <a class="_2k0gmP" href="/account/login?ret=/">Login &amp; Signup</a>
+                    </div>
+                    <div class="_2f5Jjv">
+                      <div class="_20yN1P qt4LQw">
+                        <span class="">More</span>
+                      </div>
+                      <svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="_3eosFR">
+                        <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff" class="_2GxHSA"></path>
+                      </svg>
+                    </div>
+                    <a class="_3NFO0d _2f5Jjv" href="/viewcart?otracker=Cart_Icon_Click">
+                      <svg class="_1-mlum" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path class="" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
+                          fill="#fff"></path>
+                      </svg>
+                      <span class="_2bVfmg">1</span>
+                      <span class="DJrnBo">Cart</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+    
+      <div class="d-flex flex-row justify-content-center" id="header">
+        <h3>Problem Solving Books</h3>
+      </div>
+      <div class="d-flex flex-row justify-content-between" id="main_body">
+        <div class="d-flex flex-column justify-content-between" >
+          <div class="d-flex flex-row">
+              <div class="d-flex flex-row">
+                <img id="b_thumbnail" src="http://via.placeholder.com/350x150" class="thumbnail rounded b_thumbnail" alt="b_title">
+              </div>
+              <div class="d-flex flex-column">
+                  <div class="p-1" id="b_authors">Authors</div>
+                  <div class="p-1" id="b_amt">Price</div>
+                  <div class="p-1" id="b_publisher">Publisher</div>
+                  <div class="p-1" id="b_dop">Year of Publication</div>
+              </div>
+          </div>
+          
+          <div class="d-flex flex-row justify-content-between">
+            <button id="prev" type="button" class="btn btn-primary" onclick="prev()">Previous</button>
+            <button id="next" type="button" class="btn btn-primary" onclick="next()">Next</button>
+          </div>
+          <div class="d-flex flex-column p-4">
+                <div><strong>Developed by : </strong>Guru</div>
+                <div><strong>Email : </strong>kambalagurunathreddy@gmail.com</div>
+                
+          </div>
+        </div>
+        <div class="d-flex flex-column justify-content-between">
+            <div class="d-flex  justify-content-center">
+              <div class="p-8"><h3 id="b_title">Book title</h3></div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="text-justify p-4" id="b_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, rerum dolorum, natus reiciendis tempore corporis aspernatur magni doloremque, commodi officia vero sunt excepturi illum inventore quibusdam aperiam pariatur eveniet quisquam?</div>
+            </div>
+            <div class="d-flex justify-content-end" >
+             <a name="b_moreinfo" id="b_moreinfo" class="btn btn-primary" href="#" role="button" target="_blank">More nfo</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="../static/js/books.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
